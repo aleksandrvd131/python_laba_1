@@ -1,0 +1,19 @@
+{
+  "length_to_meters": {
+    "mm": 0.001,
+    "cm": 0.01,
+    "m": 1.0,
+    "km": 1000.0,
+    "dm": 0.1,
+    "ml": 1855.3
+  },
+  "mass_to_grams": {
+    "g": 1.0,
+    "kg": 1000.0
+  },
+  "unit_groups": {
+    "length": ["mm", "cm", "m", "km", "dm", "ml"],
+    "mass": ["g", "kg"],
+    "temperature": ["c", "f", "k"]
+  }
+}

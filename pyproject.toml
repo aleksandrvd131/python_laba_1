@@ -3,7 +3,9 @@ name = "toolkit"
 version = "0.1.0"
 description = "Console toolkit with calculator and converter"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "typer>=0.27.2",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -35,6 +37,14 @@ python_version = "3.10"
 strict = true
 warn_return_any = true
 warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+module = "typer.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "toolkit.__main__"
+disable_error_code = ["misc"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
