@@ -1,5 +1,3 @@
-"""Модуль для работы с историей вычислений."""
-
 import json
 from datetime import datetime
 from pathlib import Path
@@ -10,12 +8,6 @@ HISTORY_FILE = Path("history.json")
 
 
 def load_history() -> list[dict[str, Any]]:
-    """Загружает историю вычислений из JSON-файла.
-
-    Returns:
-        Список записей истории. Если файла нет или он повреждён,
-        возвращает пустой список.
-    """
     if not HISTORY_FILE.exists():
         return []
 
@@ -31,12 +23,6 @@ def load_history() -> list[dict[str, Any]]:
 
 
 def save_to_history(expression: str, result: float) -> None:
-    """Сохраняет успешное вычисление в историю.
-
-    Args:
-        expression: Исходное выражение.
-        result: Результат вычисления.
-    """
     # Загружаем существующую историю
     history = load_history()
 

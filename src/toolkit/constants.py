@@ -21,7 +21,6 @@ ABSOLUTE_ZERO_CELSIUS: Final[float] = -273.15
 ABSOLUTE_ZERO_KELVIN: Final[float] = 0.0
 ABSOLUTE_ZERO_FAHRENHEIT: Final[float] = -459.67
 
-# --- Политика округления Decimal ---
 # Точность вычислений: количество значащих цифр
 DECIMAL_PRECISION: Final[int] = 28
 # Количество знаков после запятой в итоговом результате
